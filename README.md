@@ -20,7 +20,7 @@ There are 3 available queues to add tick functions too: Initial Ticks, Pre Ticks
 ### Importing
 You can import the any of the three functions into your project using ES6 imports
 ```javascript
-import { AddInitialTick, AddPreTick, AddTick} from 'tick-manager';
+import { AddInitialTick, AddPreTick, AddTick } from 'tick-manager';
 ```
 ### Adding a tick to an array
 You can add a function to an array as follows _(Note: The tick manager will begin running this function at the next animation frame and every one thereafter)_.
