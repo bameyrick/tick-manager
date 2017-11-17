@@ -1,6 +1,6 @@
 {
 	"name": "tick-manager",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Utility to add functions to queues to tick using requestAnimationFrame",
 	"author": "Ben Meyrick <bameyrick@gmail.com>",
 	"license": "MIT",
@@ -8,12 +8,16 @@
 	"main": "./dist/src/index.js",
 	"types": "./dist/src/index.d.ts",
 	"keywords": ["tick", "manager", "requestAnimationFrame", "raf"],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bameyrick/tick-manager.git"
+	},
 	"scripts": {
-		"lint": "tslint --project  src/**/*.ts",
+		"lint": "tslint --project src/*.ts",
 		"lint-staged": "lint-staged",
 		"precommit": "lint-staged",
 		"tslint-check": "tslint-config-prettier-check ./tslint.json",
-		"prepublishOnly": "tsc -p ./ --outDir dist/"
+		"prepublishOnly": "npm run lint && tsc -p ./ --outDir dist/"
 	},
 	"lint-staged": {
 		"*.ts": [
