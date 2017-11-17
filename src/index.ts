@@ -1,7 +1,7 @@
 const initialTicks: Function[] = [];
 const preTicks: Function[] = [];
 const ticks: Function[] = [];
-let running: boolean = false;
+let running = false;
 
 export function AddInitialTick(fn: Function): void {
 	initialTicks.push(fn);
@@ -28,9 +28,9 @@ function run(): void {
 }
 
 function tick(): void {
-	initialTicks.forEach((fn: Function) => fn());
-	preTicks.forEach((fn: Function) => fn());
-	ticks.forEach((fn: Function) => fn());
+	initialTicks.forEach(fn => fn());
+	preTicks.forEach(fn => fn());
+	ticks.forEach(fn => fn());
 
 	requestAnimationFrame(tick);
 }

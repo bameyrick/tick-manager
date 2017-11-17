@@ -61,18 +61,7 @@
 		"radix": true,
 		"semicolon": [true, "always"],
 		"triple-equals": [true, "allow-null-check"],
-		"typedef": [
-			true,
-			"call-signature",
-			"arrow-call-signature",
-			"parameter",
-			"arrow-parameter",
-			"property-declaration",
-			"variable-declaration",
-			"member-variable-declaration",
-			"object-destructuring",
-			"array-destructuring"
-		],
+		"typedef": [true, "call-signature", "arrow-call-signature", "parameter", "property-declaration", "member-variable-declaration"],
 		"typedef-whitespace": [
 			true,
 			{
